@@ -1,0 +1,81 @@
+body{
+    background-color: #ba7196;
+    padding: 9rem 0;
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* #btn{
+    background-color: rgb(61, 61, 147);
+    color: white;
+    margin: 3rem;
+} */
+h1{
+    text-shadow: .01rem .01rem .2rem white;
+}
+h3{
+    text-shadow: .01rem .01rem .2rem white;
+}
+
+.toast-msg{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    border-radius: .25rem;
+    padding:  .5rem;
+    cursor: pointer;
+    box-shadow: 0 3px 4px white;
+}
+
+.toast-msg-slide-in{
+    animation: toast-animation-in 0.5s ease-in;
+}
+
+.toast-msg-slide-out{
+    animation: toast-animation-out 0.5s ease-in;
+}
+@keyframes toast-animation-in{
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes toast-animation-out{
+    from{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
+
+#hash-span{
+    position: absolute;
+    z-index: 100;
+    margin-top: .1rem;
+    font-size: 1.1rem;
+    
+}
+
+#hex-input:focus{
+    outline: none;
+    position: relative;
+}
+
+#rgb-input:focus{
+    outline: none;
+}
